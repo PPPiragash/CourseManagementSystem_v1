@@ -35,6 +35,12 @@ namespace CourseManagementSystem_v1
         }
 
 
+        public virtual string DisplayCourseInfo()
+        {
+            return $"ID: {CourseId}, Title: {Title}, Duration: {Duration}, Price: {Price:C}";
+        }
+
+
         
 
         
