@@ -9,8 +9,8 @@ namespace CourseManagementSystem_v1
     public class Course
     {
 
-     
-        public int CourseId { get; set; }
+
+        public string CourseId { get; set; }
 
         public string Title { get; set; }
 
@@ -19,6 +19,25 @@ namespace CourseManagementSystem_v1
         public decimal Price { get; set; }
 
 
+
+        public Course(string courseId, string title, string duration, decimal price)
+        {
+            CourseId = courseId;
+            Title = title;
+            Duration = duration;
+            Price = price;
+        }
+
+
+        public override string ToString()
+        {
+            return $"ID: {CourseId}, Title: {Title}, Duration: {Duration}, Price: {Price:C}";
+        }
+
+
+        
+
+        
        
     }
 
