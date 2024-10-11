@@ -51,5 +51,16 @@ namespace CourseManagementSystem_v1
             }
             return null;
         }
+
+
+        public bool ValidateCoursePrice(decimal price)
+        {
+            if (price <= 0)
+            {
+                Console.WriteLine("Price must be a Positive Value. Please Enter a Valid Price: ");
+                return false;
+            }
+            return true;
+        }
     }
 }
