@@ -78,7 +78,7 @@ namespace CourseManagementSystem_v1
                         }
                         else
                         {
-                            Console.WriteLine("Course Not Found");
+                            Console.WriteLine("Course Not found");
                         }
                         break;
 
