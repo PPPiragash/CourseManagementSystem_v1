@@ -41,5 +41,15 @@ namespace CourseManagementSystem_v1
                 courses.Remove(course);
             }
         }
+
+        public Course GetCourseById(string courseId)
+        {
+            var course = courses.Find(c=>c.CourseId == courseId);
+            if (course != null)
+            {
+                return course;
+            }
+            return null;
+        }
     }
 }
